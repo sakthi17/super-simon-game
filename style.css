@@ -1,0 +1,225 @@
+*{
+ padding: 5px;
+}
+
+body{
+height: 800px;
+background-color: white;
+background: url("http://wallpapercave.com/wp/rUSFi40.jpg") no-repeat;
+background-size: cover;
+padding: 0;
+margin:0;
+}
+
+#level{
+     font-weight: bold;
+     font-family: 'Orbitron', sans-serif;
+     background-colo: black;
+     color: white;
+     padding:15px;
+     text-align: center;
+     border: 3px solid white;
+}
+
+#level > span{
+     position: relative;
+     right:-10px;
+     margin-right: 10px;
+}
+#show-msg{
+     width: 400px;
+     padding:15px;
+     text-align: center;
+     background-colo: black;
+     color: white;
+     borde: 1px solid white;
+     position: absolute;
+     left: 50%; top:55px;
+     transform: translateX(-50%);  
+     font-family: 'Orbitron', sans-serif;
+     display: none;
+}
+
+#result-box{
+   position: absolute;
+   /*  
+   height:440px; width: 440px;
+   margin-top: 50px;
+   top: 50%; left: 50%;
+   transform: translate(-50%,-50%);  
+   border-radius: 50%;
+   font-size: 70px;
+   line-height: 430px;     
+   */
+   height: 150px; width: 300px;
+   left:50%; top:50%;
+   transform: translate(-50%,-50%);
+   font-size:20px;
+   line-height: 150px;
+   padding:20px;
+  
+   border-radius:20px;
+   z-index:15;
+   background-color: rgba(0,0,0,0.9);
+   color: white;
+   font-family: 'Poiret One', cursive;
+   font-weight: bold;
+   text-align: center;
+   display: none;  
+}
+
+#container{
+     position: absolute;
+     left:50%;
+     transform: translateX(-50%);
+}
+
+#board{
+     height:430px;
+     width: 430px;
+     border-radius: 50%;
+     background-color: black;      
+     position: relative;
+     padding:15px;
+     border: 10px solid black;
+     margin-top: 52px;
+     -webkit-box-shadow: 3px 3px 7px 7px rgba(0,0,0,0.7);
+     -moz-box-shadow: 3px 3px 7px 7px rgba(0,0,0,0.7);
+     box-shadow: 3px 3px 7px 7px rgba(0,0,0,0.7);
+     
+}
+
+#controls{
+    height:200px;
+    width:200px;
+    position: absolute;
+    z-index:10;
+    top: 50%; left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    text-align: center;
+    border: 20px solid black;
+    background-color: #202020;
+}
+
+button{
+     background-color: white;
+     cursor: pointer;
+}
+button:focus{
+     outline: none !important;
+}
+button:active{
+     transform: translateY(3px);
+}
+
+.on-off{
+     margin-top:20px;
+}
+
+.on-off button{
+     border:3px inset grey;
+     color: black;
+     font-weight: bold;
+     cursor: pointer;
+}
+
+.title{
+ margin-top: 10px;
+ text-transform: uppercase; 
+ font-weight: bold;    
+ font-size: 30px; 
+ font-family: 'Nova Mono', monospace;
+ color: white;
+}
+
+.red-dot{
+     height:1px;
+     width:1px;
+     border:5px solid black;
+     border-radius: 50%;
+     margin: 0 auto;
+     position: relative;
+     bottom: -10px;
+     background-color: grey;
+}
+
+#strictmode{
+   margin-top:13px;  
+   border: 3px inset grey ;  
+}
+
+.buttons{
+     height: 200px;
+     width:200px;
+     position:absolute;
+     opacity:1;
+     box-shadow: inset 0px 0px 5px 5px black;
+}
+
+.top-left{
+ border-top-left-radius: 100%;   
+ top:10px; left:10px;   
+}
+
+.top-right{
+ border-top-right-radius: 100%;       
+ top:10px; right:10px;   
+}
+
+.bottom-left{
+ border-bottom-left-radius: 100%;   
+ bottom: 10px; left:10px;   
+}
+
+.bottom-right{
+ border-bottom-right-radius: 100%;      
+ bottom: 10px; right: 10px;   
+}
+
+.red{
+     background-color:  #660000;
+}
+
+.red-lit{
+     background-color: #ffffb3;
+     box-shadow:15px 15px 70px 65px #ff0000 inset;  
+}
+
+.blue{
+     background-color : #00264d;
+}
+
+.blue-lit{
+     background-color: #ffffb3;
+     box-shadow:15px 15px 70px 65px #0040ff inset;  
+}
+
+.green{
+     background-color: #00802b;
+}
+.green-lit{
+     background-color: #ffffb3;
+     box-shadow:15px 15px 70px 65px #00ff00 inset;  
+}
+.yellow{
+     background-color: #b38f00; 
+}
+.yellow-lit{
+     background-color: #ffffb3;
+     box-shadow:15px 15px 70px 65px #ffff00 inset;  
+}
+/*
+.red:hover{
+     background-color: #ff0000 ;
+}
+.yellow:hover{
+     background-color:  #ffff00;
+}
+.green:hover{
+     background-color:  #00ff00;
+}
+.blue:hover{
+     background-color: #0040ff ;
+}
+*/

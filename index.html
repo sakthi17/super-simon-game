@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Super Simon Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nova+Mono|Orbitron'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poiret+One'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="container">
+     
+     <div id="level">LEVEL<span>--</span>/ 20</div>
+     <div id="show-msg"></div>
+     <div id="result-box"></div>
+     
+     <div id="board">
+          <div class="buttons green top-left" id="0"></div>
+          <div class="buttons red top-right" id="1"></div>
+          <div class="buttons yellow bottom-left" id="2"></div>
+          <div class="buttons blue bottom-right" id="3"></div>
+
+          <div id="controls">
+                    <div class="on-off">
+                         <button type="button" id="gameon">ON</button>
+                         <button type="button" id="gameoff" disabled>OFF</button>
+                    </div>
+
+                    <div class="title">super simon</div>
+
+                    <div class="red-dot"></div>
+                    <button type="button" id="strictmode" disabled>STRICT MODE</button>
+               </div>
+     </div>
+</div>
+
+<!--<span>AIInput:</span><span id="series"></span>-->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
